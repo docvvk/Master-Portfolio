@@ -76,6 +76,9 @@ html,body{
     color: #222222;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
+  .navbar-header {
+    position: fixed;
+  }
   /*  -------- CENTRE INTRO AND ITS CONTENTS --------- */
 
    .intro-body {
@@ -118,18 +121,26 @@ html,body{
    .rotate {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
-    transition: all .4s ease-in;
+    transition: all 1s ease-in;
+    transform: rotate3d(0, 1, 0, 60deg);
   }
    .rotate.down {
-    -moz-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    transform:rotate(90deg);
+    transform: rotate3d(2, 1, 1, 1turn);
   }
  
   /* --------- DOWN LIST ITEMS --------- */
   button {
-    background-color: rgba(204, 204, 204, 0.226);
+    background-color: rgba(204, 204, 204, 0.363);
     border: #000;
+    padding: 5px 6px 3px 6px;
+    transition: all 1s linear;
+
+  }
+  button:hover {
+    border-color: black;
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58); 
+    transform: rotate3d(0, 1, 0, 180deg);
   }
   .downlist {
     display: inline-block;
@@ -312,4 +323,22 @@ html,body{
 
   .mailto {
     padding: 20px 0;
+  }
+
+  input[type=text] {
+    background-color: rgba(23, 36, 8, 0.493);
+    color: rgba(255, 255, 255, 0.514);
+  }
+  input[type=text]:focus {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58);
+  }
+  textarea {
+    background-color: rgba(23, 36, 8, 0.493);
+    color: rgba(255, 255, 255, 0.514);
+  }
+  textarea:focus {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58);
+
   }

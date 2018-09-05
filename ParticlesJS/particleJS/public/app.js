@@ -17,15 +17,15 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+// $(function() {
+//     $('a.page-scroll').bind('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top
+//         }, 1500, 'easeInOutExpo');
+//         event.preventDefault();
+//     });
+// });
 
 
 // Closes the Responsive Menu on Menu Item Click
@@ -56,6 +56,7 @@ $('.rotate').click(function() {
 //     $(this).toggleClass("hov")
 // });
 
+// Collapsing work detail divs
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -70,4 +71,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// Scroll count function
+var x = 0;
+
+$(function() {
+    $(".intro").scroll(function() {
+        $('span').text( x+=1 );
+    })
+})
+
+$("a[href='#page-top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+ });
 
