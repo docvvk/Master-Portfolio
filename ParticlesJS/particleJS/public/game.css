@@ -1,0 +1,315 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1}
+   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+   nav ul{list-style:none}
+   blockquote,q{quotes:none}
+   blockquote:before,blockquote:after,q:before,q:after{content:none}
+   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+   del{text-decoration:line-through}
+   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+   table{border-collapse:collapse;border-spacing:0}
+   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+   input,select{vertical-align:middle}
+   li{list-style:none}
+
+
+html,body{ 
+    width:100%;
+    height:100%;
+    background:#111;
+    font-family: 'Montserrat, sans-serif';
+  }
+  
+  html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  body{
+    font:normal 75% Arial, Helvetica, sans-serif;
+  }
+  
+  canvas{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* vertical-align:bottom; */
+  }
+
+   /* ---- Particles.js CONTAINER ---- */
+   
+   #particles-js{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images2.alphacoders.com/480/480530.png');
+
+    /* background-image: url('https://images.unsplash.com/photo-1535593063927-5c40dee9cb83?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bfc6e7c6043924de9c4746bef6dc969&auto=format&fit=crop&w=2850&q=80'); */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    /* background-image-blur */
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); */
+  }
+
+   .contain {
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+   }
+   .top-nav-collapse {
+    padding: 0;
+    background: #ffffff;
+    color: #222222;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  /*  -------- CENTRE INTRO AND ITS CONTENTS --------- */
+
+   .intro-body {
+     position: absolute;
+     z-index: 999;
+     top: 30%;
+     left: 26%;
+     background-color: rgba(0, 0, 0, 0.384);
+     padding: 50px;
+     display: block;
+   }
+
+   h1.brand-heading {
+    font-size: 5vw;
+    color: rgba(223, 215, 215, 0.534);
+    text-shadow: 1px 1px 30px rgb(133, 94, 240); 
+
+    transition: text-shadow 1s linear .5s;
+    transition: color 1s ease-in .5s;
+   }
+   h1.brand-heading:hover {
+    font-size: 5vw;
+    color: rgba(22, 19, 19, 0.87);
+    text-shadow: 1px 1px 30px yellowgreen; 
+    /* filter: brightness(150%) blur(1px); */
+   }
+   .intro-text {
+    font-size: 3vw;
+    color: rgba(218, 214, 214, 0.453);
+    transition: all .5s linear;
+   }
+
+   .btn-social-icon {
+     color: black;
+     size: 100px;
+   }
+
+ 
+   /* rotate menu logo on click */
+   .rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .4s ease-in;
+  }
+   .rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+  }
+ 
+  /* --------- DOWN LIST ITEMS --------- */
+  button {
+    background-color: rgba(204, 204, 204, 0.226);
+    border: #000;
+  }
+  .downlist {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: auto; 
+  }
+
+  .downlist-items {
+    padding: 15px 0;
+  }
+
+  .light {
+    color: rgba(218, 214, 214, 0.253);
+  }
+  .light:hover {
+    color: #ff9;
+    /* font-size: 120%; */
+  }
+
+  /* section for intro text */
+  .content-section-one {
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(214, 209, 209, 0.37);
+    width: 100%;
+  }
+
+  /* section for skills */
+
+  .skills-text {
+    text-align: center;
+    margin-bottom: -.5px;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 3vw; 
+    color: rgba(214, 209, 209, 0.37);
+    background-color: rgba(255, 255, 153, 0.103);
+    transition: all .5s linear;
+  }
+  .skills-text:hover {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58); 
+  }
+  .skills-div {
+    justify-content: space-evenly;
+    border: 2px solid rgba(255, 255, 153, 0.103);;
+  }
+  
+  .skills-container {
+    font-size: 100px; 
+    color: #ccc;
+    padding: 10px;
+  }
+
+  .skills-icons:hover {
+    transition: 1.9s;
+    color:orange;
+    opacity: 1;
+  }
+
+  /* ---------- RESUME SECTION ---------- */
+ 
+
+  .resume-section {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .resume-text {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 3vw; 
+    color: rgba(214, 209, 209, 0.37);
+    background-color: rgba(255, 255, 153, 0.103);
+    margin-bottom: .1px;
+    transition: all .5s linear;
+  }
+  .resume-text:hover {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58); 
+  }
+  .resume-items {
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 153, 0.103);
+    font-size: 25px;
+  }
+
+
+  /* --------- PORTFOLIO SECTION ---------- */
+
+  .work-text {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 3vw; 
+    color: rgba(214, 209, 209, 0.37);
+    background-color: rgba(255, 255, 153, 0.103);
+    margin-top: 30px;
+    transition: all .5s linear;
+  }
+
+  .work-text:hover {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58);
+  }
+
+  .portfolio-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+
+  /* ---------- CONTACT SECTION ---------- */
+
+  .contact-text {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 3vw; 
+    color: rgba(214, 209, 209, 0.37);
+    background-color: rgba(255, 255, 153, 0.103);
+    margin-top: 30px; 
+    transition: all .5s linear;
+  }
+
+  .contact-text:hover {
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58);
+  }
+
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    background-color: rgba(255, 255, 153, 0.103);
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: all 1s linear;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover { 
+    background-color: rgba(83, 104, 26, 0.589);
+    color: rgb(202, 255, 58);
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    margin-left: 7.5px;;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f100;
+  }
+  a.btn {
+    color: rgb(59, 53, 53);
+  }
+
+  div.row.thumbnail {
+    padding: 4px;
+    border: 4px rgba(3, 3, 0, 0) solid;
+    width: 100%;
+    background-color: rgba(219, 243, 152, 0.589);
+  }
+
+  .work-image {
+    height: 200px;
+    width: 100%;;
+  }
+
+  .contact-section {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .mailto {
+    padding: 20px 0;
+  }

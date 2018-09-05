@@ -1,0 +1,29 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docvvk/Portfolio.git"
+  },
+  "keywords": [
+    "particle.js",
+    "portfolio",
+    "jquery"
+  ],
+  "author": "Vivek Malhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/docvvk/Portfolio/issues"
+  },
+  "homepage": "https://github.com/docvvk/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http-server": "^0.11.1",
+    "particlesjs": "^2.2.3"
+  }
+}
