@@ -21,8 +21,9 @@
 html,body{ 
     width:100%;
     height:100%;
-    background:#111;
+    background: url('https://images.wallpaperscraft.com/image/black_white_abstract_pen_water_green_93513_1920x1080.jpg') no-repeat fixed center;
     font-family: 'Montserrat, sans-serif';
+    font-size: 10px;
   }
   
   html{
@@ -49,7 +50,7 @@ html,body{
    #particles-js{
     width: 100%;
     height: 100%;
-    background-image: url('https://images2.alphacoders.com/480/480530.png');
+    /* background-image: url('../../images/gold.jpg'); */
 
     /* background-image: url('https://images.unsplash.com/photo-1535593063927-5c40dee9cb83?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bfc6e7c6043924de9c4746bef6dc969&auto=format&fit=crop&w=2850&q=80'); */
     background-size: cover;
@@ -64,11 +65,27 @@ html,body{
     -ms-filter: blur(5px);
     filter: blur(5px); */
   }
+  
+  /* ------------- PARALLAX IMAGE CONTAINER ------------ */
+  .parallax {
+    /* The image used */
+    /* background-image: url('../../images/ember.jpg'); */
 
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    /* ------------- NAVBAR & ITS CONTTENTS -------------- */
    .contain {
     position: absolute;
     z-index: 999;
-    top: 20px;
+    /* top: 20px; */
    }
    .top-nav-collapse {
     padding: 0;
@@ -78,6 +95,18 @@ html,body{
   }
   .navbar-header {
     position: fixed;
+  }
+
+  .page-scroller {
+    position: fixed;
+    z-index: 999;
+    color: rgb(131, 252, 10);
+    top: 5%;
+    right: 2.3%;
+    transition: all 1s linear;
+  }
+  .page-scroller:hover {
+    color: rgb(58, 193, 255);
   }
   /*  -------- CENTRE INTRO AND ITS CONTENTS --------- */
 
@@ -93,8 +122,8 @@ html,body{
 
    h1.brand-heading {
     font-size: 5vw;
-    color: rgba(223, 215, 215, 0.534);
-    text-shadow: 1px 1px 30px rgb(133, 94, 240); 
+    color: rgb(223, 215, 215);
+    text-shadow: .5rem .5rem 1rem rgb(15, 12, 0); 
 
     transition: text-shadow 1s linear .5s;
     transition: color 1s ease-in .5s;
@@ -107,18 +136,27 @@ html,body{
    }
    .intro-text {
     font-size: 3vw;
-    color: rgba(218, 214, 214, 0.453);
+    color: rgba(218, 214, 214, 0.774);
     transition: all .5s linear;
    }
 
-   .btn-social-icon {
-     color: black;
-     size: 100px;
-   }
+   /* .btn-social-icon {
+     color: rgb(82, 139, 16);
+     size: 12rem; */
+   /* } */
+   .fa-3x {
+     color: rgb(82, 139, 16);
+     size: 30px;
+     transition: all 1s linear;
 
+   }
+   .fa-3x:hover {
+     color: rgb(7, 7, 0);
+     text-shadow: 1px 1px 8px yellow;
+   }
  
    /* rotate menu logo on click */
-   .rotate {
+   /* .rotate {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
     transition: all 1s ease-in;
@@ -126,62 +164,85 @@ html,body{
   }
    .rotate.down {
     transform: rotate3d(2, 1, 1, 1turn);
-  }
+  } */
  
   /* --------- DOWN LIST ITEMS --------- */
   button {
-    background-color: rgba(204, 204, 204, 0.363);
+    background-color: rgba(204, 204, 204, 0);
+
     border: #000;
     padding: 5px 6px 3px 6px;
-    transition: all 1s linear;
+    transition: all 3s linear;
+    bottom: 20px;
+    color: rgb(198, 255, 41);
+    position: relative;
+    top: 2rem;
 
   }
   button:hover {
     border-color: black;
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58); 
-    transform: rotate3d(0, 1, 0, 180deg);
+    background-color: rgb(2, 7, 0);
+    color: rgb(248, 4, 4); 
+    transform: rotate3d(0, 1, 0, 360deg);
   }
   .downlist {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.384);
-    width: auto; 
-  }
+    /* display: flex; */
+    /* background-color: rgba(0, 0, 0, 0.384); */
+    position: relative;
+    left: 15px;
 
+  }
+  
   .downlist-items {
-    padding: 15px 0;
-  }
-
+    padding: 40px 20px;
+    }
+ 
   .light {
-    color: rgba(218, 214, 214, 0.253);
+    font-size: 25px;
+    font-family: cursive;
+    color: rgba(218, 214, 214, 0.493);
+    transition: all .5s linear;
   }
   .light:hover {
-    color: #ff9;
+    color: rgb(202, 255, 58); 
+    text-shadow: 0px 25px 4px rgb(0, 0, 0);
+    
     /* font-size: 120%; */
   }
 
-  /* section for intro text */
+  /* ------------ INTRO TEXT SECTION ------------- */
   .content-section-one {
-    margin-top: 30px;
+    margin: 3rem 0 5rem 0;
+    padding: 0 1rem 3rem 1rem;
     text-align: center;
-    color: rgba(214, 209, 209, 0.37);
+    color: rgba(194, 247, 2, 0.918);
     width: 100%;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: .3rem;
+    background: linear-gradient(70deg, #85c90644, #08060041);    
+    border-radius: 2rem;
+    left: 1.4rem;
   }
-
-  /* section for skills */
-
+  
+  /* ----------- SKILLS SECTION ------------- */
+  
   .skills-text {
     text-align: center;
     margin-bottom: -.5px;
     padding: 25px 0;
     text-transform: uppercase;
     font-size: 3vw; 
-    color: rgba(214, 209, 209, 0.37);
+    color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 153, 0.103);
     transition: all .5s linear;
+    font-weight: bold;
+
   }
   .skills-text:hover {
-    background-color: rgba(83, 104, 26, 0.589);
+    background-color: rgba(0, 0, 0, 0.589);
     color: rgb(202, 255, 58); 
   }
   .skills-div {
@@ -194,20 +255,21 @@ html,body{
     color: #ccc;
     padding: 10px;
   }
-
+  
   .skills-icons:hover {
     transition: 1.9s;
     color:orange;
     opacity: 1;
   }
-
+  
   /* ---------- RESUME SECTION ---------- */
- 
-
+  
+  
   .resume-section {
     margin-top: 30px;
     text-align: center;
     width: 100%;
+    background: url('../../images/fireworks.jpg') no-repeat fixed center;
   }
   .resume-text {
     padding: 25px 0;
@@ -227,10 +289,15 @@ html,body{
     border: 2px solid rgba(255, 255, 153, 0.103);
     font-size: 25px;
   }
-
-
+  
+  
   /* --------- PORTFOLIO SECTION ---------- */
 
+  #portfolio {
+    background-image: url('../../images/vc.jpg') no-repeat fixed center !important;
+
+  }
+  
   .work-text {
     padding: 25px 0;
     text-transform: uppercase;
