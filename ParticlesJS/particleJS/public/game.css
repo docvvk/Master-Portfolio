@@ -21,7 +21,14 @@
 html,body{ 
     width:100%;
     height:100%;
-    background: url('https://images.wallpaperscraft.com/image/black_white_abstract_pen_water_green_93513_1920x1080.jpg') no-repeat fixed center;
+    background-image: url('https://images.unsplash.com/photo-1478733672327-ce27bc999503?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=64a7b5ecbbd8f186ee23894fe06cb423&auto=format&fit=crop&w=3033&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+  
     font-family: 'Montserrat, sans-serif';
     font-size: 10px;
   }
@@ -34,10 +41,10 @@ html,body{
     text-decoration: none;
   }
   
-  body{
+  /* body{
     font:normal 75% Arial, Helvetica, sans-serif;
   }
-  
+   */
   canvas{
     width: 100%;
     height: 100%;
@@ -50,13 +57,16 @@ html,body{
    #particles-js{
     width: 100%;
     height: 100%;
-    /* background-image: url('../../images/gold.jpg'); */
+    /* background-image: url('../../images/tech.jpeg'); */
 
     /* background-image: url('https://images.unsplash.com/photo-1535593063927-5c40dee9cb83?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bfc6e7c6043924de9c4746bef6dc969&auto=format&fit=crop&w=2850&q=80'); */
+    background-image: url('https://images.unsplash.com/photo-1506512534708-3737d46bffe1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c50522d4496abeea544e9d3401d0143c&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    /* filter: hue-rotate(1000deg); */
     position: relative;
+
 
     /* background-image-blur */
     /* -webkit-filter: blur(5px);
@@ -100,14 +110,16 @@ html,body{
   .page-scroller {
     position: fixed;
     z-index: 999;
-    color: rgb(131, 252, 10);
+    color: rgb(245, 245, 245);
     top: 5%;
     right: 2.3%;
     transition: all 1s linear;
   }
   .page-scroller:hover {
-    color: rgb(58, 193, 255);
-  }
+    color: rgb(255, 109, 109);
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+    font-size: 4rem;
+ }
   /*  -------- CENTRE INTRO AND ITS CONTENTS --------- */
 
    .intro-body {
@@ -118,11 +130,13 @@ html,body{
      background-color: rgba(0, 0, 0, 0.384);
      padding: 50px;
      display: block;
+     box-shadow: 2px 2px 50px #921600;
+     border-radius: 1rem;
    }
 
    h1.brand-heading {
     font-size: 5vw;
-    color: rgb(223, 215, 215);
+    color: rgb(221, 220, 220);
     text-shadow: .5rem .5rem 1rem rgb(15, 12, 0); 
 
     transition: text-shadow 1s linear .5s;
@@ -130,13 +144,13 @@ html,body{
    }
    h1.brand-heading:hover {
     font-size: 5vw;
-    color: rgba(22, 19, 19, 0.87);
-    text-shadow: 1px 1px 30px yellowgreen; 
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 30px #921600; 
     /* filter: brightness(150%) blur(1px); */
    }
    .intro-text {
     font-size: 3vw;
-    color: rgba(218, 214, 214, 0.774);
+    color: rgb(218, 214, 214);
     transition: all .5s linear;
    }
 
@@ -144,15 +158,16 @@ html,body{
      color: rgb(82, 139, 16);
      size: 12rem; */
    /* } */
-   .fa-3x {
-     color: rgb(82, 139, 16);
+   .fa-4x {
+     color: rgb(221, 220, 220);
      size: 30px;
      transition: all 1s linear;
 
    }
-   .fa-3x:hover {
-     color: rgb(7, 7, 0);
-     text-shadow: 1px 1px 8px yellow;
+   .fa-4x:hover {
+     color: rgb(255, 109, 109);
+     text-shadow: 1px 1px 8px rgb(0, 0, 0);
+     font-size: 4rem;
    }
  
    /* rotate menu logo on click */
@@ -167,45 +182,49 @@ html,body{
   } */
  
   /* --------- DOWN LIST ITEMS --------- */
-  button {
+  .nav-button {
     background-color: rgba(204, 204, 204, 0);
 
     border: #000;
     padding: 5px 6px 3px 6px;
-    transition: all 3s linear;
+    transition: all .3s linear;
     bottom: 20px;
     color: rgb(198, 255, 41);
     position: relative;
     top: 2rem;
+    z-index: 99;
 
   }
-  button:hover {
+  .nav-button:hover {
     border-color: black;
-    background-color: rgb(2, 7, 0);
-    color: rgb(248, 4, 4); 
-    transform: rotate3d(0, 1, 0, 360deg);
+    /* background-color: rgb(2, 7, 0); */
+    /* color: rgb(248, 4, 4);  */
+    /* transform: rotate3d(0, 1, 0, 360deg); */
   }
+  
   .downlist {
     /* display: flex; */
     /* background-color: rgba(0, 0, 0, 0.384); */
     position: relative;
-    left: 15px;
-
+    left: 1rem;
+    color: white;
   }
   
   .downlist-items {
     padding: 40px 20px;
+    color: white;
+
     }
  
   .light {
     font-size: 25px;
     font-family: cursive;
-    color: rgba(218, 214, 214, 0.493);
+    color: rgb(255, 250, 250);
     transition: all .5s linear;
   }
   .light:hover {
-    color: rgb(202, 255, 58); 
-    text-shadow: 0px 25px 4px rgb(0, 0, 0);
+    /* color: rgb(255, 89, 241);  */
+    text-shadow: 0px 25px 4px rgb(131, 250, 244);
     
     /* font-size: 120%; */
   }
@@ -215,14 +234,16 @@ html,body{
     margin: 3rem 0 5rem 0;
     padding: 0 1rem 3rem 1rem;
     text-align: center;
-    color: rgba(194, 247, 2, 0.918);
+    color: rgb(221, 220, 220);
     width: 100%;
-    font-family: cursive;
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Pinyon Script', cursive;
+    /* font-family: 'Tangerine', cursive; */
     font-size: 3rem;
     font-weight: bold;
     line-height: 4rem;
     letter-spacing: .3rem;
-    background: linear-gradient(70deg, #85c90644, #08060041);    
+    background: linear-gradient(10deg, #000704f8, #9216008e);    
     border-radius: 2rem;
     left: 1.4rem;
   }
@@ -234,26 +255,31 @@ html,body{
     margin-bottom: -.5px;
     padding: 25px 0;
     text-transform: uppercase;
-    font-size: 3vw; 
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 153, 0.103);
-    transition: all .5s linear;
-    font-weight: bold;
-
+    font-size: 4rem; 
+    color: rgb(221, 220, 220);
+    background: linear-gradient(10deg, black, #9216008e);    
+    text-shadow: 2px 2px 5px #921600;
+    transition: all .3s linear;
+    /* font-weight: bold; */
+    border-radius: 1rem 1rem 0 0; 
   }
   .skills-text:hover {
-    background-color: rgba(0, 0, 0, 0.589);
-    color: rgb(202, 255, 58); 
+    color:  #fc4747;
+    text-shadow: 2px 2px 5px rgb(221, 220, 220);
   }
   .skills-div {
     justify-content: space-evenly;
-    border: 2px solid rgba(255, 255, 153, 0.103);;
+    border-radius: 0 0 1rem 1rem; 
   }
   
   .skills-container {
-    font-size: 100px; 
+    font-size: 7rem; 
     color: #ccc;
     padding: 10px;
+  }
+
+  .skills-div {
+    background: linear-gradient(0deg, violet, indigo, blue, green, yellow, orange, red, violet, indigo, blue, green, yellow, orange, red,violet, indigo, blue, green, yellow, orange, red) fixed;    
   }
   
   .skills-icons:hover {
@@ -266,80 +292,121 @@ html,body{
   
   
   .resume-section {
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
     width: 100%;
-    background: url('../../images/fireworks.jpg') no-repeat fixed center;
+    background: url('https://images.unsplash.com/photo-1506512534708-3737d46bffe1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c50522d4496abeea544e9d3401d0143c&auto=format&fit=crop&w=1950&q=80') fixed;
+    background-size: cover;
+    
   }
   .resume-text {
     padding: 25px 0;
     text-transform: uppercase;
-    font-size: 3vw; 
-    color: rgba(214, 209, 209, 0.37);
-    background-color: rgba(255, 255, 153, 0.103);
+    color: rgb(221, 220, 220);
+    font-size: 4rem;
+    /* background: linear-gradient(50deg, black, #9216008e, white);     */
+    text-shadow: 2px 2px 5px #921600;
     margin-bottom: .1px;
     transition: all .5s linear;
   }
   .resume-text:hover {
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58); 
+    color:  #fc4747;
+    text-shadow: 2px 2px 5px rgb(221, 220, 220);
+  }
+  .resume-subtext {
+    color: rgb(253, 4, 45);
+    margin: -2rem 0 2rem 0;
+    text-transform: uppercase;
+    
   }
   .resume-items {
     padding: 20px;
-    border: 2px solid rgba(255, 255, 153, 0.103);
+    /* border: 2px solid rgba(255, 255, 153, 0.103); */
     font-size: 25px;
+    color: rgb(238, 228, 228);
+  }
+  .resume-link {
+    color: rgb(194, 181, 181);
+    padding: 2rem;
+    background: linear-gradient(10deg, black, #9216008e);  
+    border-radius: 50%;  
+  }
+  .resume-link:hover {
+    color: white;
+    text-decoration: none;
   }
   
   
   /* --------- PORTFOLIO SECTION ---------- */
 
   #portfolio {
-    background-image: url('../../images/vc.jpg') no-repeat fixed center !important;
+    background-color: rgba(0, 0, 0, 0.205);
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
   }
   
   .work-text {
     padding: 25px 0;
+    margin-top: 2rem;
     text-transform: uppercase;
-    font-size: 3vw; 
-    color: rgba(214, 209, 209, 0.37);
-    background-color: rgba(255, 255, 153, 0.103);
-    margin-top: 30px;
+    font-size: 4rem; 
+    color: rgb(221, 220, 220);
+    background: linear-gradient(10deg, black, #9216008e);  
+    text-shadow: 2px 2px 5px #921600;
+
     transition: all .5s linear;
+    border-radius: 1rem;
+    /* font-weight: bold; */
   }
 
   .work-text:hover {
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58);
+    color:  #fc4747;
+    text-shadow: 2px 2px 5px rgb(221, 220, 220);
   }
 
-  .portfolio-thumbnails {
+  .work-list {
+    margin-bottom: 2rem;
+  }
+
+  /* .portfolio-thumbnails {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-  }
+  } */
 
 
   /* ---------- CONTACT SECTION ---------- */
 
+  .contact-section {
+    background: url('https://images.unsplash.com/photo-1506512534708-3737d46bffe1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c50522d4496abeea544e9d3401d0143c&auto=format&fit=crop&w=1950&q=80') fixed;
+    background-size: cover;
+    /* text-align: center; */
+    padding: 2rem 0;
+  }
+
   .contact-text {
     padding: 25px 0;
     text-transform: uppercase;
-    font-size: 3vw; 
-    color: rgba(214, 209, 209, 0.37);
-    background-color: rgba(255, 255, 153, 0.103);
+    font-size: 4rem; 
+    color: rgb(221, 220, 220);
+    background: linear-gradient(10deg, black, #9216008e);  
+    text-shadow: 2px 2px 5px #921600;
     margin-top: 30px; 
+    border-radius: 1rem;
     transition: all .5s linear;
   }
 
   .contact-text:hover {
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58);
+    color:  #fc4747;
+    text-shadow: 2px 2px 5px rgb(221, 220, 220);
   }
 
-  /* Style the button that is used to open and close the collapsible content */
+  /* Style the nav-button that is used to open and close the collapsible content */
   .collapsible {
     background-color: rgba(255, 255, 153, 0.103);
     color: #444;
@@ -353,7 +420,7 @@ html,body{
     transition: all 1s linear;
   }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the nav-button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover { 
     background-color: rgba(83, 104, 26, 0.589);
     color: rgb(202, 255, 58);
@@ -383,29 +450,58 @@ html,body{
     width: 100%;;
   }
 
-  .contact-section {
-    text-align: center;
-    padding: 80px 0;
-  }
 
   .mailto {
     padding: 20px 0;
   }
 
+  .control-label {
+    color: white;
+    float: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px #921600;
+    text-align: left;
+  }
+
   input[type=text] {
-    background-color: rgba(23, 36, 8, 0.493);
-    color: rgba(255, 255, 255, 0.514);
+    background-color: rgba(241, 98, 63, 0.301);
+    color: rgb(0, 0, 0);
+    height: 3rem;
+    border: 1px solid black;
+    font-size: 2rem;
+  }
+  input[type=text]:hover {
+    background-color: rgba(255, 156, 131, 0.301);
+    border: 1px solid wheat;
+
   }
   input[type=text]:focus {
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58);
+    background-color: rgba(255, 255, 255, 0.952);
+    color: rgb(0, 0, 0);
   }
   textarea {
-    background-color: rgba(23, 36, 8, 0.493);
+    background-color: rgba(241, 98, 63, 0.301);
     color: rgba(255, 255, 255, 0.514);
+    border: 1px solid black;
+    font-size: 2rem;
+
   }
   textarea:focus {
     background-color: rgba(83, 104, 26, 0.589);
     color: rgb(202, 255, 58);
+    font-size: 2rem;
+  }
+
+  .form-button {
+    height: 3rem;
+    width: 100%;
+    color: white;
+    float: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px #921600;
+    text-align: left;
+    background: linear-gradient(10deg, black, #9216008e);  
 
   }

@@ -5,16 +5,16 @@ $(document).ready(function(){
 
 
 // jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-}
+// function collapseNavbar() {
+//     if ($(".navbar").offset().top > 50) {
+//         $(".fixed-top").addClass("top-nav-collapse");
+//     } else {
+//         $(".fixed-top").removeClass("top-nav-collapse");
+//     }
+// }
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+// $(window).scroll(collapseNavbar);
+// $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 // $(function() {
@@ -36,11 +36,11 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Rotate logo on click
-$('.rotate').click(function() {
-    $(this).toggleClass("down");
+// $('.rotate').click(function() {
+//     $(this).toggleClass("down");
 
-    $(".downlist").toggleClass(".downlist.down");
-});
+//     $(".downlist").toggleClass(".downlist.down");
+// });
 
 //animate heading text on hover
 // $('.brand-heading').hover(function () {
@@ -73,15 +73,9 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Scroll count function
-var x = 0;
 
-$(function() {
-    $(".intro").scroll(function() {
-        $('span').text( x+=1 );
-    })
-})
 
-$("a[href='#page-top']").click(function() {
+$("a[href='#page-topp']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "fast");
     return false;
  });

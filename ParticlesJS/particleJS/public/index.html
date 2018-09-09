@@ -25,6 +25,7 @@
   <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Eater|Roboto+Mono:400,500,700" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Tangerine:400,700" rel="stylesheet">
 </head>
 
 <!-- count particles -->
@@ -45,10 +46,10 @@
 
     <!-- Navigation -->
     <div class="contain row">
-      <nav class="navbar navbar-custom fixed-top mt-4" role="navigation">
+      <nav class="navbar navbar-custom navbar-fixed-top fixed-top mt-4" role="navigation">
         <div class="navbar-header col-sm-2 col-sm-offset-4">
-          <button type="button" class="button navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="rotate fas fa-cog fa-spin fa-3x"></i>
+          <button type="button" class="nav-button navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="rotate fas fa-cog fa-spin fa-4x"></i>
           </button>         
         </div>
         <!-- nav links for toggling -->
@@ -85,9 +86,9 @@
       <!-- end container -->
     </nav>
     
-    <div class="page-scroller">
-      <a class="navbar-brand page-scroll " href="#page-top">
-        <i class="fa fa-2x fas fa-spinner fa-pulse"></i>                
+    <div class="scroller">
+      <a class="navbar-brand page-scroll " href="#page-topp">
+        <i class="fa fa-3x fas fa-spinner fa-pulse page-scroller"></i>                
       </a>    
     </div>
 
@@ -109,23 +110,23 @@
                                 <div class="col-md-12" id="iconListTop">
                                   <!-- github icon -->
                                   <a href="https://github.com/docvvk" class="btn btn-social-icon btn-github" target="_blank">
-                                    <i class="fa fa-github fa-fw fa-3x animated"></i>
+                                    <i class="fa fa-github fa-fw fa-4x animated"></i>
                                   </a>
                                   <!-- LinkedIn icon -->
                                   <a href="https://www.linkedin.com/in/docvvk" class="btn btn-social-icon btn-linkedin" target="_blank">
-                                    <i class="fa fa-linkedin fa-fw fa-3x animated"></i>
+                                    <i class="fa fa-linkedin fa-fw fa-4x animated"></i>
                                   </a>
                                   <!-- Spotify icon -->
                                   <a href=" https://open.spotify.com/user/docvvk" class="btn btn-social-icon btn-spotify" target="_blank">
-                                    <i class="fas fa-sync fa-spin fa-3x"></i>
+                                    <i class="fas fa-sync fa-spin fa-4x"></i>
                                   </a>
                                   <!-- twitter icon -->
                                   <a href="https://twitter.com/docvvk" class="btn btn-social-icon btn-twitter" target="_blank">
-                                    <i class="fa fa-twitter fa-fw fa-3x animated"></i>
+                                    <i class="fa fa-twitter fa-fw fa-4x animated"></i>
                                   </a>
                                   <!-- facebook icon -->
                                   <a href="https://www.facebook.com/docvvk" class="btn btn-social-icon btn-facebook" target="_blank">
-                                    <i class="fa fa-facebook fa-fw fa-3x animated"></i>
+                                    <i class="fa fa-facebook fa-fw fa-4x animated"></i>
                                   </a>
 
                                   <!-- <div class="fa-3x">
@@ -211,8 +212,8 @@
                           </div>
                           <div class="d-flex third-row justify-content-around">
                               <div class="skills-container">
-                                  <!-- PHP -->
-                                  <i class="devicon-php-plain skills-icons"></i>
+                                  <!-- Sequelize -->
+                                  <i class="devicon-sequelize-plain colored"></i>
                                 </div>
                                 <div class="skills-container">
                                   <!-- Mac -->
@@ -235,15 +236,15 @@
                       </div>
                     </div>
                   </section>
-                  <!-- resume -->
+                  <!------------ RESUME SECTION ----------------->
                   <section id="resume" class="content-section text-center">
                     <div class="resume-section">
                       <div class="container">
                         <div class="col-sm-12" id="resumeBlock">
                           <h2 class="resume-text">Resume</h2>
                           <div class="resume-items">
-                              <p>Click on the link below to view and/or download my resume.</p>
-                              <a href="https://docs.google.com/document/d/1vevugQf-WxZ7UnsLc9v6w2sJybD_aPefMQ6i6fhyI6Y/edit?usp=sharing" class="btn btn-default btn-lg" target="_blank">
+                              <p class="resume-subtext">Click on the link below to view and/or download my resume.</p>
+                              <a class="resume-link" href="https://docs.google.com/document/d/1vevugQf-WxZ7UnsLc9v6w2sJybD_aPefMQ6i6fhyI6Y/edit?usp=sharing" class="btn btn-default btn-lg" target="_blank">
                               <i class="fa fa-file-text-o" aria-hidden="true"></i> View my resume </a>    
                           </div>
                         </div>
@@ -263,6 +264,7 @@
                       <div class="col-sm-12">
                         <div class="portfolio-thumbnails">
                           <div class="row work-list">
+                            <!----------------FIRST ROW--------------->
                             <div class="col-sm-6" work-list-one>
                                 <button class="collapsible">WORD GUESS GAME</button>
                                 <div class="content">
@@ -374,8 +376,10 @@
                                       </div>        
                                 </div>  
                             </div>
+                          <!---------- SECOND ROW ------------> 
                             <div class="col-sm-6" work-list-one>
-                                <button class="collapsible">WORD GUESS GAME</button>
+                               
+                              <button class="collapsible">WORD GUESS GAME</button>
                                 <div class="content">
                                     <div class="row thumbnail">
                                         <img class="work-image col-sm-4" src="../../images/WordGuessGame.png" alt="three card poker">
@@ -499,8 +503,8 @@
                         </div>
                         <div class="row">
                          <div class="col-sm-6" id="contactBlock">
-                            <p>Don't hesitate to contact me to provide any feedback on my work, inquire about potential work, or just to say hello and chat! </p>
-                                  <form class="form-horizontal" id="contact-form" role="form" method="post" action="form-process.php">
+                            <p></p>
+                                  <form class="form-horizontal" id="contact-form" role="form" method="post" action="form-process">
                     
                         <!-- first name -->
                                   <div class="form-group">
@@ -553,7 +557,7 @@
                         <!-- submit form -->
                                   <div class="form-group">
                                     <div class="col-sm-12">
-                                      <button type="submit" class="btn btn-default btn-lg" name="submit" value="Submit">Send</button>
+                                      <button type="submit" class="form-button btn btn-default btn-lg" name="submit" value="Submit">Send</button>
                                     </div>
                                   </div>
                                 </form>
