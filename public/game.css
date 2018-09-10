@@ -52,7 +52,7 @@ html,body{
    #particles-js{
     width: 100%;
     height: 100%;
-    background-image: url('../../images/autmn.jpeg');
+    background-image: url('../images/autmn.jpeg');
 
     /* background-image: url('https://images.unsplash.com/photo-1535593063927-5c40dee9cb83?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bfc6e7c6043924de9c4746bef6dc969&auto=format&fit=crop&w=2850&q=80'); */
     /* background-image: url('https://images.unsplash.com/photo-1506512534708-3737d46bffe1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c50522d4496abeea544e9d3401d0143c&auto=format&fit=crop&w=1950&q=80'); */
@@ -468,6 +468,8 @@ html,body{
     display: none;
     overflow: hidden;
     background-color: #f1f1f100;
+    cursor: pointer;
+    transition: 1s;
   }
   a.btn {
     color: rgb(59, 53, 53);
@@ -545,3 +547,47 @@ html,body{
     color: aliceblue;
     
   }
+
+
+
+  /* ================================ACCORDIAN */
+
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: .4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

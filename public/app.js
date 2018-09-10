@@ -17,15 +17,15 @@ $(document).ready(function(){
 // $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-// $(function() {
-//     $('a.page-scroll').bind('click', function(event) {
-//         var $anchor = $(this);
-//         $('html, body').stop().animate({
-//             scrollTop: $($anchor.attr('href')).offset().top
-//         }, 1500, 'easeInOutExpo');
-//         event.preventDefault();
-//     });
-// });
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
 
 // Closes the Responsive Menu on Menu Item Click
@@ -79,4 +79,24 @@ $("a[href='#page-topp']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "fast");
     return false;
  });
+
+
+ var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 
