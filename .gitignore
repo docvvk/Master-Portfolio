@@ -1,6 +1,7 @@
 particles.min.js
 particles.js
 stats.js
+jquery.easing.1.3.js
 particles.json
 /images
 /node_modules
