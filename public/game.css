@@ -315,6 +315,7 @@ html,body{
     padding: 10px;
   }
 
+
   
   .skills-icons:hover {
     transition: 1.9s;
@@ -402,9 +403,73 @@ html,body{
     text-shadow: 2px 2px 5px rgb(221, 220, 220);
   }
 
-  .work-list {
+
+    /* Style the nav-button that is used to open and close the collapsible content */
+    /* .collapsible {
+      background-color: rgba(255, 255, 153, 0.103);
+      color: #444;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      transition: all 1s linear;
+    } */
+  
+    /* Add a background color to the nav-button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    /* .active, .collapsible:hover { 
+      background-color: rgba(83, 104, 26, 0.589);
+      color: rgb(202, 255, 58);
+    } */
+  
+    /* Style the collapsible content. Note: hidden by default */
+    /* .content {
+      margin-left: 0px;;
+      width: 100%;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f100;
+      cursor: pointer;
+      transition: 1s;
+    } */
+   
+    div.row.thumbnail {
+      text-align: center;
+      position: relative;
+      left: 1.5rem;
+      /* padding: 4px; */
+      /* border: 4px rgba(3, 3, 0, 0) solid; */
+      width: 100%;
+      background-color: rgba(94, 91, 88, 0.897);
+      border-radius: 2rem;
+    }
+    .work-image {
+      height: 18rem;
+      width: 100%;
+      /* border-radius: 10%; */
+    }
+    .caption-head {
+      margin: 1rem;
+      color:  navajowhite;
+      font-size: 3rem;
+    }
+    .caption-para {
+      margin: 1rem;
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+    }
+    a.btn {
+      color: rgb(252, 172, 126);
+      font-size: 1.5rem;
+    }
+    a.btn:hover {
+      color: rgb(0, 0, 0) ;
+    }
+  /* .work-list {
     margin-bottom: 2rem;
-  }
+  } */
 
   /* .portfolio-thumbnails {
     display: flex;
@@ -441,51 +506,6 @@ html,body{
     text-shadow: 2px 2px 5px rgb(221, 220, 220);
   }
 
-  /* Style the nav-button that is used to open and close the collapsible content */
-  .collapsible {
-    background-color: rgba(255, 255, 153, 0.103);
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 15px;
-    transition: all 1s linear;
-  }
-
-  /* Add a background color to the nav-button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover { 
-    background-color: rgba(83, 104, 26, 0.589);
-    color: rgb(202, 255, 58);
-  }
-
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-    margin-left: 7.5px;;
-    width: 100%;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f100;
-    cursor: pointer;
-    transition: 1s;
-  }
-  a.btn {
-    color: rgb(59, 53, 53);
-  }
-
-  div.row.thumbnail {
-    padding: 4px;
-    border: 4px rgba(3, 3, 0, 0) solid;
-    width: 100%;
-    background-color: rgba(219, 243, 152, 0.589);
-  }
-
-  .work-image {
-    height: 200px;
-    width: 100%;;
-  }
 
 
   .mailto {
