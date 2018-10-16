@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <!-- <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles."> -->
+  <meta name="author" content="Vivek Malhan"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+  <!--Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" media="screen" href="./game.css">
+  
+  <!-- <link rel="stylesheet" media="screen" href="./app.css"> -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Eater|Roboto+Mono:400,500,700" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Tangerine:400,700" rel="stylesheet">
+</head>
+
+<!-- count particles -->
+<!-- <div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div> -->
+
+
+
+
+
+<body>
+  <img src="./images/comp.gif" alt="funky gif">
+  <div id="particles-js" class="parallax"></div>
+
+
+  
+
+    <!-- Navigation -->
+    <div class="contain row">
+      <nav class="navbar navbar-custom navbar-fixed-top fixed-top mt-4" role="navigation">
+        <div class="navbar-header col-sm-2 col-sm-offset-4">
+          <button type="button" class="nav-button navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="rotate fas fa-cog fa-spin fa-4x"></i>
+          </button>         
+        </div>
+        <!-- nav links for toggling -->
+        <div class="downlist collapse navbar-collapse navbar-left navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden active">
+              <a href="#page-top"></a>
+            </li>
+            <li class="downlist-items">
+              <a class="page-scroll" href="#about">
+                <span class="light">ABOUT</span>
+              </a>
+            </li>
+            <li class="downlist-items">
+              <a class="page-scroll" href="#resume">
+                <span class="light">RESUME</span>
+              </a>
+            </li>
+            <li class="downlist-items">
+              <a class="page-scroll" href="#portfolio">
+                <span class="light">PORTFOLIO</span>
+              </a>
+            </li>
+            <li class="downlist-items">
+              <a class="page-scroll" href="#contact">
+                <span class="light">CONTACT</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar collapse -->
+      </div>     
+      <!-- end container -->
+    </nav>
+    
+    <div class="scroller">
+      <a class="navbar-brand page-scroll " href="#page-topp">
+        <i class="fa fa-3x fas fa-spinner fa-pulse page-scroller"></i>                
+      </a>    
+    </div>
+
+    <!----------- Particles JS Container ------------>
+    <!-- <div id="particles-js"></div> -->
+    
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mt-4">
+              <h1 class="brand-heading">
+                VIVEK MALHAN
+              </h1>
+              <p class="intro-text">
+                WEB DEVELOPER
+              </p>
+                              <div class="row">
+                                <div class="col-md-12" id="iconListTop">
+                                  <!-- github icon -->
+                                  <a href="https://github.com/docvvk" class="btn btn-social-icon btn-github" target="_blank">
+                                    <i class="fa fa-github fa-fw fa-4x animated"></i>
+                                  </a>
+                                  <!-- LinkedIn icon -->
+                                  <a href="https://www.linkedin.com/in/docvvk" class="btn btn-social-icon btn-linkedin" target="_blank">
+                                    <i class="fa fa-linkedin fa-fw fa-4x animated"></i>
+                                  </a>
+                                  <!-- Spotify icon -->
+                                  <a href=" https://open.spotify.com/user/docvvk" class="btn btn-social-icon btn-spotify" target="_blank">
+                                    <i class="fas fa-sync fa-spin fa-4x"></i>
+                                  </a>
+                                  <!-- twitter icon -->
+                                  <a href="https://twitter.com/docvvk" class="btn btn-social-icon btn-twitter" target="_blank">
+                                    <i class="fa fa-twitter fa-fw fa-4x animated"></i>
+                                  </a>
+                                  <!-- facebook icon -->
+                                  <a href="https://www.facebook.com/docvvk" class="btn btn-social-icon btn-facebook" target="_blank">
+                                    <i class="fa fa-facebook fa-fw fa-4x animated"></i>
+                                  </a>
+
+                                  <!-- <div class="fa-3x">
+                                      <i class="fas fa-spinner fa-spin"></i>
+                                      <i class="fas fa-circle-notch fa-spin"></i>
+                                      <i class="fas fa-sync fa-spin"></i>
+                                      <i class="fas fa-cog fa-spin"></i>
+                                      <i class="fas fa-spinner fa-pulse"></i>
+                                      <i class="fas fa-stroopwafel fa-spin"></i>
+                                    </div> -->
+                                    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </header>
+                    <!-- ABOUT -->
+                <section id="about" class="container text-center">
+
+                      <div class="col-sm-12 content-section-one row">
+
+                          <div class="background-image"></div>
+                          <p class="intro-text2">
+                            <br> I am passionate about approaching programming challenges from different angles, and collaborating with others to create meaningful web applications.
+                            My coding journey started about an year ago and the love for coding has been growing since then. 
+                            <br>
+                            <!-- <br> When I'm not coding you can find me Running or Sleeping in my couch! -->
+                          </p>
+      
+
+
+
+                        <!-- <div class="background-image"></div>
+                        <p class="intro-text2">
+                          <br> I am passionate about approaching programming challenges from different angles, and collaborating with others to create meaningful web applications.
+                          My coding journey started about an year ago and the love for coding has been growing since then. 
+                          <br>
+                          <br> When I'm not coding you can find me Running or Sleeping in my couch! -->
+                        </p> -->
+                      </div>
+                    <div class=" contect-section-two row">
+                      <div class="col-sm-12">
+                        <h2 class="skills-text">Skills</h2>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="skills-div">
+                          <div class="d-flex first-row justify-content-around">
+                              <div class="skills-container">
+                                  <!-- Javascript -->
+                                  <i class="devicon-javascript-plain colored skills-icons" href="#" data-toggle="tooltip" title="JavaScript! ES6"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- HTML -->
+                                  <i class="devicon-html5-plain-wordmark skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- CSS -->
+                                  <i class="devicon-css3-plain-wordmark colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- Bootstrap -->
+                                  <i class="devicon-bootstrap-plain-wordmark colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- jQuery -->
+                                  <i class="devicon-jquery-plain-wordmark colored skills-icons"></i>
+                                </div>
+                          </div>
+                          <div class="d-flex second-row justify-content-around">
+                              <div class="skills-container">
+                                  <!-- MySQL -->
+                                  <i class="devicon-mysql-plain colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- Node.js -->
+                                  <i class="devicon-nodejs-plain colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- MongoDB -->
+                                  <i class="devicon-mongodb-plain-wordmark colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- Meteor.js -->
+                                  <i class="devicon-meteor-plain colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- React.js -->
+                                  <i class="devicon-react-original-wordmark colored skills-icons"></i>
+                                </div>      
+                          </div>
+                          <div class="d-flex third-row justify-content-around">
+                              <div class="skills-container">
+                                  <!-- Sequelize -->
+                                  <i class="devicon-sequelize-plain colored"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- Mac -->
+                                  <i class="devicon-apple-original skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- Trello -->
+                                  <i class="devicon-trello-plain colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- github -->
+                                  <i class="devicon-github-plain-wordmark colored skills-icons"></i>
+                                </div>
+                                <div class="skills-container">
+                                  <!-- heroku -->
+                                  <i class="devicon-heroku-plain colored skills-icons"></i>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!------------ RESUME SECTION ----------------->
+                  <section id="resume" class="content-section text-center">
+                    <div class="resume-section">
+                      <div class="container">
+                        <div class="col-sm-12" id="resumeBlock">
+                          <h2 class="resume-text">Resume</h2>
+                          <div class="resume-items">
+                              <p class="resume-subtext">Click on the link below to view and/or download my resume.</p>
+                              <a class="resume-link" href="https://docs.google.com/document/d/1vevugQf-WxZ7UnsLc9v6w2sJybD_aPefMQ6i6fhyI6Y/edit?usp=sharing" class="btn btn-default btn-lg" target="_blank">
+                              <i class="fa fa-file-text-o" aria-hidden="true"></i> View my resume </a>    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+
+
+
+
+
+                  <section id="portfolio" class="container content-section text-center">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <h2 class="work-text">My Work</h2>
+                            <br>
+                          </div>
+                        </div>
+                    <!-- Card -->
+<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="rgba-black-strong py-5 px-4">
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8">
+
+              <!--Accordion wrapper-->
+              <div class="accordion md-accordion accordion-5" id="accordionEx5" role="tablist" aria-multiselectable="true">
+
+                  <!-- Accordion card -->
+                  <div class="card mb-4">
+
+                      <!-- Card header -->
+                      <div class="card-header p-0 z-depth-1" role="tab" id="heading30">
+                          <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse30" aria-expanded="true" aria-controls="collapse30">
+                              <i class="fa fa-cloud fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+                              <h4 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                  Word Guess Game / Javascript / Bootstrap
+                              </h4>
+                          </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapse30" class="collapse show" role="tabpanel" aria-labelledby="heading30" data-parent="#accordionEx5">
+                          <div class="card-body rgba-black-light white-text z-depth-1">
+                            <div class="p-md-4 mb-0">
+                              <div class="row thumbnail">
+                                  <img class="work-image col-sm-4" src="./images/projects/WordGuessGame.png" alt="Hangman Game Screenshot">
+        
+                                  <div class="col-sm-8 caption">
+                                    <h3 class="caption-head">Word Guess Game</h3>
+                                    <p class="caption-para">An interactive online Word Guess Hangman game created using HTML, CSS3, Javascript and Bootstrap</p>
+                                    <p>
+                                      <a href="https://github.com/docvvk/Word-Guess-Game" target="_blank" class="btn">
+                                        <i class="fa fa-github fa-fw"></i>
+                                        <span class="network-name">CODE</span>
+                                      </a>
+                                      <a href="https://docvvk.github.io/Word-Guess-Game/" target="_blank" class="btn">
+                                        <i class="fa fa-trophy fa-fw"></i>
+                                        <span class="network-name">APP</span>
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>        
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Accordion card -->
+
+                  <!-- Accordion card -->
+                  <div class="card mb-4">
+
+                      <!-- Card header -->
+                      <div class="card-header p-0 z-depth-1" role="tab" id="heading31">
+                          <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse31" aria-expanded="true" aria-controls="collapse31">
+                              <i class="fa fa-commenting-o fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+                              <h4 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                  DISNEY'S SOCIAL NETWORK APP  ==> jQuery / NODE / Express / MVC / Heroku 
+                              </h4>
+                          </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapse31" class="collapse" role="tabpanel" aria-labelledby="heading31" data-parent="#accordionEx5">
+                          <div class="card-body rgba-black-light white-text z-depth-1">
+                              <div class="card-body rgba-black-light white-text z-depth-1">
+                                  <div class="p-md-4 mb-0">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="./images/projects/DisneySocialApp.png" alt="Screenshot Friend Finder">
+              
+                                        <div class="col-sm-8 caption">
+                                          <h3 class="caption-head">Disney's Social Networking App</h3>
+                                          <p class="caption-para">Web application created by Node.js, express, MySQL, handlebars, NPM Package control, MVC/ORM!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name">CODE</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name">APP</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+                                </div>
+                                </div>
+                      </div>
+                  </div>
+                  <!-- Accordion card -->
+
+                  <!-- Accordion card -->
+                  <div class="card mb-4">
+
+                      <!-- Card header -->
+                      <div class="card-header p-0 z-depth-1" role="tab" id="heading32">
+                          <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse32" aria-expanded="true" aria-controls="collapse32">
+                              <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+                              <h4 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                  MALTON COMMUNITY TOASTMASTERS WEBSITE
+                              </h4>
+                          </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapse32" class="collapse" role="tabpanel" aria-labelledby="heading31" data-parent="#accordionEx5">
+                          <div class="card-body rgba-black-light white-text z-depth-1">
+                              <div class="card-body rgba-black-light white-text z-depth-1">
+                                  <div class="p-md-4 mb-0">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="./images/projects/MCTC.png" alt="Screenshot Friend Finder">
+              
+                                        <div class="col-sm-8 caption">
+                                          <h3 class="caption-head">MALTON COMMUNITY TOASTMASTERS WEBSITE / FreeToastHost 3</h3>
+                                          <p class="caption-para">Website Administrator for Malton Community Toastmasters Club! Website created using FreeToastHost 3</p>
+                                          <p>
+                                            <a href="https://mctc.toastmastersclubs.org/" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name">CODE</span>
+                                            </a>
+                                            <a href="https://mctc.toastmastersclubs.org/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name">SITE</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+                                </div>
+                                </div>
+                      </div>
+                  </div>
+                  <!-- Accordion card -->
+              </div>
+              <!--/.Accordion wrapper-->
+
+          </div>
+      </div>
+  </div>
+  <!-- Content -->
+</div>
+<!-- Card -->
+
+                  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <!-- Portfolio Section -->
+                <section id="portfolio" class="container content-section text-center">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h2 class="work-text">My Work</h2>
+                        <br>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="portfolio-thumbnails">
+                          <div class="row work-list">
+                            <!----------------FIRST ROW--------------->
+                            <div class="col-sm-6" work-list-one>
+                                <button class="collapsible ">WORD GUESS GAME</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/WordGuessGame.png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">s
+                                          <h3>Word Guess Game</h3>
+                                          <p>An interactive online Word Guess game using Node.js, express, MySQL, handlebars, NPM Package control, MVC/ORM.</p>
+                                          <p>
+                                            <a href="https://github.com/kellymersereau/Three-Card-Poker" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="http://threecardpoker.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>  
+                            </div>
+                          <!---------- SECOND ROW ------------> 
+                            <div class="col-sm-6" work-list-one>
+                               
+                              <button class="collapsible">WORD GUESS GAME</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/WordGuessGame.png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Word Guess Game</h3>
+                                          <p>An interactive online Three Card Poker game using Node.js, express, MySQL, handlebars, NPM Package control, MVC/ORM.</p>
+                                          <p>
+                                            <a href="https://github.com/kellymersereau/Three-Card-Poker" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="http://threecardpoker.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>
+    
+                                <button class="collapsible">DISNEY'S SOCIAL NETWORK APP</button>
+                                <div class="content">
+                                    <div class="row thumbnail">
+                                        <img class="work-image col-sm-4" src="../../images/DisneySocialApp .png" alt="three card poker">
+    
+                                        <div class="col-sm-8 caption">
+                                          <h3>Star Wars</h3>
+                                          <p>Web application created by Express and Node and deployed on Heroku!</p>
+                                          <p>
+                                            <a href="https://github.com/docvvk/FriendFinder" target="_blank" class="btn">
+                                              <i class="fa fa-github fa-fw"></i>
+                                              <span class="network-name"> Github</span>
+                                            </a>
+                                            <a href="https://desolate-stream-21303.herokuapp.com/" target="_blank" class="btn">
+                                              <i class="fa fa-trophy fa-fw"></i>
+                                              <span class="network-name"> Site</span>
+                                            </a>
+                                          </p>
+                                        </div>
+                                      </div>        
+                                </div>  
+                            </div>  
+                          </div>
+                         </div>
+                        </div>
+                      </div>
+                  </section>
+                  <!-- Contact Section -->
+                  <section id="contact" class="content-section text-center">
+                    <div class="contact-section">
+                      <div class="container">
+                        <div class="col-sm-12">
+                            <h2 class="contact-text"> Contact me! </h2>
+                        </div>
+                        <div class="row">
+                         <div class="col-sm-6" id="contactBlock">
+                            <p></p>
+                                  <form class="form-horizontal" id="contact-form" role="form" method="post" action="form-process">
+                    
+                        <!-- first name -->
+                                  <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">
+                                      Name
+                                    </label>
+                                    <div class="col-sm-12">
+                                      <input type="text" name="first-name" class="form-control" required="true" placeholder="your name...">
+                                    </div>
+                                    <div class="row">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                        <!-- last name -->
+                                  <!-- <div class="form-group">
+                                    <label for="last-name" class="col-sm-2 control-label">
+                                      Last Name
+                                    </label>
+                                    <div class="col-sm-12">
+                                      <input type="text" name="last-name" class="form-control" required="true">
+                                    </div>
+                                    <div class="row">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>  -->
+                        <!-- email -->
+                                  <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                      EMail
+                                    </label>
+                                    <div class="col-sm-12">
+                                      <input type="text" name="email" class="form-control" required="true" placeholder="youremail@xyz.com....">
+                                    </div>
+                                    <div class="row">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                        <!-- message -->
+                                  <div class="form-group">
+                                    <label for="message" class="col-sm-2 control-label">
+                                      Message
+                                    </label>
+                                    <div class="col-sm-12">
+                                      <textarea class="form-control" rows="6" name="message" required="true" placeholder="your message for me..."></textarea>
+                                    </div>
+                                    <div class="row">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                        <!-- submit form -->
+                                  <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <button type="submit" class="form-button btn btn-default btn-lg" name="submit" value="Submit">Send</button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+
+                              <!-- ------------- EMAIL & PHONE -------------- -->
+                              <div class="col-sm-6 contact-section">
+                                  <div class="container">
+                                    <div class="col-sm-12" id="contactBlock">                                   
+                                      <ul class="list-inline banner-social-buttons">
+                                        <li class="mailto">
+                                          <i class="fa fa-envelope fa-fw" style="font-size:48px;color:red"></i>
+                                          <br>
+                                          <a href="mailto:vivek.malhan@yahoo.com" class="btn btn-info btn-lg">
+                                            <span class="glyphicon glyphicon-envelope"></span>vivek.malhan@yahoo.com
+                                          </a>
+                                          <!-- <span class="network-name">E-Mail</span> -->
+                                          <!-- <br> -->
+                                            <!-- <a href="mailto:vivek.malhan@yahoo.com" class="btn btn-default btn-lg" target="_top">
+                                              <small>
+                                                vivek.malhan@yahoo.com
+                                              </small>
+                                            </a> -->
+                                        </li>
+                                        <li class="mailto">
+                                          <i class="fa fa-phone fa-fw" style="font-size:48px;color:red"></i>
+                                          <br>
+                                          <!-- <span class="network-name"> Phone</span><br> -->
+                                          <a href="tel:+1-647-327-4455" class="btn btn-info btn-lg">
+                                            <span class="glyphicon glyphicon-phone-alt"></span> (647) 327-4455
+                                          </a>
+                                          <!-- <a href="tel:+1-647-327-4455" target="_blank" class="btn btn-default btn-lg">
+                                            <small>
+                                                (647) 327-4455
+                                            </small>
+                                          </a> -->
+                                         </a>
+                                        </li>
+                                        <li class="mailto">
+                                            <i class="fa fa-map-marker" style="font-size:48px;color:red" aria-hidden="true"></i>
+                                            <br>
+                                            <a href="https://www.toronto.ca/" class="btn btn-info btn-lg">
+                                              <span class="glyphicon glyphicon-phone-alt"></span>TORONTO
+                                            </a>
+                                            <!-- <i class="fa fa-location fa-fw" style="font-size:48px;color:red"></i> -->
+                                            <!-- <span class="network-name"> LinkedIn</span> -->
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+      
+                        </div>
+      
+                      </div>
+                    </div>
+                  </section>
+                  <!-- footer -->
+                  <footer>
+                    <!-- <div class="container text-center">
+                      <p class="footerOne">
+                        <span class="footerTitle">Phone:</span>
+                        <a href="tel:+1-647-327-4455"> (647) 327-4455</a>
+                      </p>
+                      <p class="footerOne">
+                        <span class="footerTitle">E-mail:</span>
+                        <a href="mailto:vivek.malhan@yahoo.com" target="_top"> vivek.malhan@yahoo.com</a>
+                      </p>
+                      <br>
+                    </div> -->
+                    <div class="smallfooter">
+                        <p class="smallFooter text-center">"Follow your dreams!"</p>
+                        <p class="footerCopy text-center">Copyright © Vivek Malhan 2018</p>  
+                    </div>
+                  </footer>
+
+<!-- scripts -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <!-- bootstrap.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+
+<!-- particle.js -->
+<script src="./particles.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+<!-- game.js -->
+<script src="./game.js"></script>
+<!-- app.js -->
+<script src="./app.js"></script>
+
+
+<!-- stats.js -->
+<!-- <script src="../stats.js"></script> -->
+<!-- <script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script> -->
+
+</body>
+</html>
