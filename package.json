@@ -4,7 +4,8 @@
   "description": "portfolio",
   "main": "game.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon connection.js"
   },
   "repository": {
     "type": "git",
